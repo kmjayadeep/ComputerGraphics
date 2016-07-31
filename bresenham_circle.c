@@ -16,6 +16,7 @@ int main(){
 	scanf("%d",&r);
 
 	initgraph(&gd,&gm,"");
+	setbkcolor(WHITE);
 	cleardevice();
 	
 	x=0;
@@ -41,12 +42,12 @@ int main(){
 }
 
 void pixel(int xc,int yc,int x,int y){
-	putpixel(xc+x,yc-y,1);
-	putpixel(xc-x,yc-y,1);
-	putpixel(xc+x,yc+y,1);
-	putpixel(xc-x,yc+y,1);
-	putpixel(xc+y,yc-x,1);
-	putpixel(xc-y,yc-x,1);
-	putpixel(xc+y,yc+x,1);
-	putpixel(xc-y,yc+x,1);
+	putpixel(xc+x,yc-y,0);
+	putpixel(xc-x,yc-y,0);
+	putpixel(xc+x,yc+y,0);
+	putpixel(xc-x,yc+y,0);
+	putpixel(xc+y,yc-x,0);
+	putpixel(xc-y,yc-x,0);
+	putpixel(xc+y,yc+x,0);
+	putpixel(xc-y,yc+x,0);
 }

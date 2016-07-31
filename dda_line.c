@@ -17,6 +17,7 @@ int main(){
 
 	detectgraph(&gd,&gm);
 	initgraph(&gd,&gm,"");
+	setbkcolor(WHITE);
 
 	dx=abs(x2-x1);
 	dy=abs(y2-y1);

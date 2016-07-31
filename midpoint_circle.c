@@ -13,7 +13,8 @@ int main(){
 	scanf("%d",&r);
 
 	initgraph(&gd,&gm,"");
-		
+	setbkcolor(WHITE);
+
 	x=0;
 	y=r;
 	Pk=1-r;
@@ -35,12 +36,12 @@ int main(){
 	closegraph();
 }
 void pixel(int xc,int yc,int x,int y){
-	putpixel(xc+x,yc+y,7);
-	putpixel(xc+y,yc+x,7);
-	putpixel(xc-y,yc+x,7);
-	putpixel(xc-x,yc+y,7);
-	putpixel(xc-x,yc-y,7);
-	putpixel(xc-y,yc-x,7);
-	putpixel(xc+y,yc-x,7);
-	putpixel(xc+x,yc-y,7);
+	putpixel(xc+x,yc+y,0);
+	putpixel(xc+y,yc+x,0);
+	putpixel(xc-y,yc+x,0);
+	putpixel(xc-x,yc+y,0);
+	putpixel(xc-x,yc-y,0);
+	putpixel(xc-y,yc-x,0);
+	putpixel(xc+y,yc-x,0);
+	putpixel(xc+x,yc-y,0);
 }

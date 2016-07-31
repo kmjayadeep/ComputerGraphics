@@ -24,7 +24,8 @@ int main(){
 
 	detectgraph(&gd,&gm);
 	initgraph(&gd,&gm,"");
-	putpixel(x,y,3);
+	setbkcolor(WHITE);
+	putpixel(x,y,0);
 
 	while(x <= x2){
 		if(p < 0){
@@ -37,7 +38,7 @@ int main(){
 			y=y+1;
 			p = p + 2 * (dy - dx);
 		}
-		putpixel(x,y,3);
+		putpixel(x,y,0);
 		delay(50);
 	}
 
